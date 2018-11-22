@@ -30,3 +30,33 @@ Print the new sum that Xenia can count.
 ```
 1+1+1+3+3
 ```
+
+## Question 2
+
+Reading the book "Equations of Mathematical Magic" Roman Oira-Oira and Cristobal Junta found an interesting equation: a−(a⊕x)−x=0 for some given a, where ⊕ stands for a bitwise exclusive or (XOR) of two integers (this operation is denoted as ^ or xor in many modern programming languages). Oira-Oira quickly found some x, which is the solution of the equation, but Cristobal Junta decided that Oira-Oira's result is not interesting enough, so he asked his colleague how many non-negative solutions of this equation exist. This task turned out to be too difficult for Oira-Oira, so he asks you to help.
+
+### Input
+
+Each test contains several possible values of a and your task is to find the number of equation's solution for each of them. The first line contains an integer t (1 ≤ t ≤
+1000) the number of these values. The following t lines contain the values of parameter a, each value is an integer from 0 to 2 30 − 1 inclusive.
+
+### Output
+
+For each value of a print exactly one integer — the number of non-negative solutions of the equation for the given value of the parameter. Print answers in the same order as
+values of a appear in the input. One can show that the number of solutions is always finite.
+
+### Example
+
+#### input
+```
+3
+0
+2
+1073741823
+```
+#### output
+```
+1
+2
+1073741824
+```
